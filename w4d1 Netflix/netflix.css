@@ -1,0 +1,193 @@
+.netflixLogo {
+  width: 90px;
+}
+.netflixLogo-phone{
+  width: 100px;
+}
+
+.dropdown-container div {
+  margin-top: 10px;
+  height: 40px;
+}
+
+.view-toggle {
+  display: flex;
+}
+
+.netflix-btn {
+  background-color: #444;
+  border: 1px solid #888;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  transition: background-color 0.3s;
+}
+
+.netflix-btn.active {
+  background-color: #666;
+}
+
+.netflix-btn:hover {
+  background-color: #555;
+}
+
+.icon-list::before {
+  font-size: 20px;
+}
+
+.icon-grid::before {
+  font-size: 20px;
+}
+
+.film-card {
+  width: 250px;
+  height: 200px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+.film-card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  position: absolute; /*non funziona comunque, cioè le card di destra continuano a sovrapporsi quindi l'ho scalato a 1.1 soltanto*/
+}
+.film-card:hover .hover-element {
+  display: block;
+}
+.film-card:hover .hoverP{
+  display: block !important;
+}
+
+.carouselSmartphone .film-card {
+  width: 200px;
+  height: 125px;
+}
+.carouselSmartphone .swiper-slide {
+  width: 200px !important;
+}
+.carouselSmartphone .swiper-button-next,
+.carouselSmartphone .swiper-button-prev {
+  width: 100px;
+  height: 80px;
+  color: red;
+  margin-top: auto;
+  background: none;
+}
+
+.carousel {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.swiper-slide {
+  width: 250px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 46%;
+  transform: translateY(-50%);
+  color: white;
+
+  width: 250px;
+  height: 139px;
+}
+.swiper-button-next {
+  background: linear-gradient(to right, #2a2d3100, #343a40);
+}
+.swiper-button-prev {
+  margin-left: -50px;
+  background: linear-gradient(to left, #2a2d3100, #343a40);
+}
+
+.hide-section {
+  visibility: hidden;
+}
+
+.icon ion-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.finalp {
+  margin-left: 190px;
+  margin-top: 10px;
+}
+
+:root {
+  --icon-body-color: #5e5e5e;
+  --icon-active-color: red;
+}
+
+body {
+  margin: 0;
+  color: var(--icon-body-color);
+}
+
+svg {
+  fill: currentColor;
+  max-width: 100%;
+}
+
+.icon-container {
+  width: 20px;
+  height: 20px;
+  align-items: start;
+  justify-content: start;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.hamburger-icon rect {
+  transition: all 0.4s ease-in-out;
+}
+
+.hamburger-icon:hover rect {
+  fill: var(--icon-active-color);
+}
+
+.hamburger-icon:hover .top,
+.hamburger-icon:hover .bottom {
+  transform-origin: center;
+}
+
+.hamburger-icon:hover .top {
+  transform: rotate(45deg) translate(0, 20px);
+}
+
+.hamburger-icon:hover .bottom {
+  transform: rotate(-45deg) translate(0, -21px);
+}
+
+.hamburger-icon:hover .middle {
+  opacity: 0;
+}
+
+.wrap-menu {
+  
+  transition: left 0.3s ease;
+  z-index: 2;
+  left:-250px;
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  background-color: red;
+};
+.wrap-menu.active {
+  left: 0;
+
+}
+
+.play-hamburger{
+  border: none;
+  background: none;
+  color: white;
+
+}
+
